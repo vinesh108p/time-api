@@ -7,6 +7,7 @@
 
 # terraform lock
 .terraform.tfstate.lock.info
+.terraform.lock.hcl
 
 # vscode stuff
 .vscode
