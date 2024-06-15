@@ -1,3 +1,11 @@
+# Variables
+IMG_NAME = time-api
+
+## Build
+
+docker-build: # Build and tag docker image
+	docker build -f Dockerfile --no-cache -t $(IMG_NAME):latest .
+
 ## Local Development
 
 run-locally: # Run the API server locally
