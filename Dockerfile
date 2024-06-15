@@ -3,6 +3,10 @@ FROM --platform=linux/amd64 golang:1.22.4-alpine3.19
 # Add Maintainer Info
 LABEL maintainer="Vinesh Patel <vinesh108p@gmail.com>"
 
+# Install curl for ECS health check
+RUN apk update; \
+    apk --no-cache add curl;
+
 # Set the Current Working Directory inside the container
 WORKDIR /app
 
