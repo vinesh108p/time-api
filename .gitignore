@@ -1,0 +1,20 @@
+#  Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# terraform lock
+.terraform.tfstate.lock.info
+
+# vscode stuff
+.vscode
+
+# mac stuff
+.DS_Store
+
+# local stuff - logs and CLI config files
+*.log
+.terraformrc
+terraform.rc
